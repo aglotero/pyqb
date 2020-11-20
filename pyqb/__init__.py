@@ -24,7 +24,7 @@ class QBRequest():
         self.request = request
         if ticket:
             self.request["ticket"] = ticket
-        elif user_token:
+        if user_token:
             self.request["usertoken"] = user_token
         self.request["encoding"] = encoding
         self.body = ""
